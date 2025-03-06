@@ -1,0 +1,20 @@
+Notes:
+1. IRB status: only non-human subject now
+2. MIMIC IV data: pre and post open note (2021), primary care and mental health
+create pipeline -> pull in note, get free text, cleaning of the data
+3. Phenotype the MIMIC population. Use ICD code to understand the diagnosis distribution. 
+ICD-10 codes: mood disorder, including major depression (F32*, F33*), bipolar disorder (F25.0, F30*, F31*), persistent mood disorder (F34*), eating disorder (F50*), or schizophrenia (F20*) + internal medicine. Can use data from different domains.
+4. Cloud server: https://researchit.jhu.edu/research-hpc/
+5. Future challenge: How to evaluate change in sensitive topics, tones, etc…
+
+Questions: 
+1. Time range for MIMIC-IV (2011-2019). When did Beth Israel Deaconess Medical Center adopt Open Notes? (https://www.opennotes.org/institution/beth-israel-deaconess-medical-center/)
+2. Whether there is progress notes? If yes, focus on that. 
+
+To do:
+1. Create git repo (completed)
+2. Use BigQuery or other tools to access MIMIC data. (https://github.com/MIT-LCP/mimic-code/blob/main/mimic-iv/buildmimic/bigquery/README.md)
+Report the data: eg. number of words (tokens), # of unique tokens
+Tokenization: use spacy (https://spacy.io) or medspacy (https://github.com/medspacy/medspacy)
+3. Check time range for MIMIC-IV (2011-2019). Notice that they added some new data in the lastest version.
+4. Send emails to ask about the time range for MIMIC-IV. Get access to HPC from Hopkins. 
